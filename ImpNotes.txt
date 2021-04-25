@@ -1,0 +1,101 @@
+Install git command including bash
+
+git init
+
+git status 
+create .gitignore file & type node_modules/
+
+git add.
+
+git commit -m 'First commit'
+
+
+Setting up ssh keys and to connect in git
+
+mkdir ~/.ssh
+ssh -keygen -t rsa -b 4096 -C "sureshtr389@gmail.com"
+
+
+Keep default value for all
+
+
+eval $(ssh -agent -S)
+
+o/p agent pid 810 or hhh
+
+ssh -add ~/.ssh/id_rsa
+
+path -> ls -a -l ~/.ssh
+
+
+.pub is for public(git)
+
+
+
+In github page
+
+
+Create a new repo
+
+After Creating ->
+
+execute git remote add command in git bash
+
+In settings under ssh & GPG keys
+
+Add new SSH key to make it secure
+
+cat ~/.ssh/id_rsa.pub
+
+Copy the key & Paste it in Git page
+
+
+SSH -T git@github.com
+
+This is used for testing whether ssh got connected or not
+
+After setting SSh key execute:
+
+git push -u origin master
+
+
+
+Heroku
+
+install heroku cli First
+
+heroku keys:add
+
+(To add ssh keys)
+
+heroku create proname
+
+(Process.env.PORT) for heroku
+
+Make sure that you don't use localhost in code 
+
+After modifying:
+
+git add.
+
+git commit -m "Comment"
+
+git remote
+
+git push heroku master
+
+Now you can get link
+
+
+If you modify the code
+
+git add .
+
+git commit -m "second commit"
+
+git push
+
+git push heroku master
+
+
+
